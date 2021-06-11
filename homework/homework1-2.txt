@@ -1,0 +1,9 @@
+➜  ~ cd desktop
+➜  desktop ls
+summer2021-webdesign-david
+➜  desktop cd summer2021-webdesign-david
+➜  summer2021-webdesign-david mkdir homework
+➜  summer2021-webdesign-david cd homework
+➜  homework touch homework1-2.txt
+➜  homework ~
+➜  ~ 
