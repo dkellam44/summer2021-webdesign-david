@@ -6,6 +6,7 @@
 
     <!-- Internal Style Sheets -->
     <style>
+      /* element level styling */
       img {
         height: 200px;
         width: 200px;
@@ -14,8 +15,35 @@
         border-style: solid;
         border-radius: 5px;
       }
+      /* class level styling */
       .portrait{
           border-color: blueviolet;
+      }
+      /* ID Level Styling */
+      #horses{
+        border-color: green;
+        box-shadow:  10px 10px firebrick;
+      }
+
+      /* classes begin with a period
+      select an id needs to start with the hash symbol */
+      /* Selector Specificity: 
+      One Element = 1point
+      One Class = 10points
+      One ID = 100points
+      Can only be applied to one element*/
+/* Chaining Multiple selectors */
+      div h1{
+        color: purple;
+      }
+      body div .portrait{
+        border-color: greenyellow;
+      }
+      div {
+        background-color: lightslategray;
+      }
+      #elegant{
+        color: olive;
       }
     </style>
 
@@ -28,6 +56,7 @@
       alt="profile of a brown horse"
       width="640"
       height="426"
+      id="horses"
     />
     <a href="https://www.google.com/" target="_blank">
       <img
@@ -37,5 +66,25 @@
         height="426"
       /></a> <!-- Avoid the /n "new line" showing up in page-->
     <img class="portrait" src="chick.jpg" alt="chick on pink backdrop">
+
+    <div>
+      <h1>An <span id="elegant">Elegant</span> Horse</h1>
+
+      <img
+        src="horseprofile.jpg"
+        alt="profile of a brown horse"
+        width="640"
+        height="426"
+        id="horses"
+      />
+      <a href="https://www.google.com/" target="_blank">
+        <img
+          src="browncow.jpg"
+          alt="brown and white cow in a grass field"
+          width="640"
+          height="426"
+        /></a> <!-- Avoid the /n "new line" showing up in page-->
+      <img class="portrait" src="chick.jpg" alt="chick on pink backdrop">
+    </div>
   </body>
 </html>
