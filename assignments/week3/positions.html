@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Positions</title>
+        <style>
+            body{
+                border: solid 5px;
+            }
+            /* 
+            VALUE "ABSOLUTE" is absolute relative to the PARENT element . in this case <body>
+                            #red{
+                                background-color: red;
+                                position: absolute;*/
+            #red, #blue, #green {
+                width: 200px;
+                height: 200px;
+            }
+            #red{
+                background-color: red;
+                position: absolute;
+                top: 100px;
+                left: 100px; 
+                margin-top: 50px;
+                margin-left: 100px;
+            }
+            /* VALUE "RELATIVE" is relative to to its default/static location */
+            #blue{
+                background-color: blue;
+                position: relative;
+                top: 100px;
+                left: 200px;
+            }
+            #green{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="green"></div>
+    </body>
+</html>
