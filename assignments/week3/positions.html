@@ -23,6 +23,9 @@
                 left: 100px; 
                 margin-top: 50px;
                 margin-left: 100px;
+                z-index: 2;
+
+                /* z index = stacking level */
             }
             /* VALUE "RELATIVE" is relative to to its default/static location */
             #blue{
@@ -34,11 +37,20 @@
             #green{
                 background-color: green;
             }
+            #yellow{
+                background-color: yellow;
+                margin-left: 400px
+                
+            }
+
+            /* Monday 28 June : positions property and z axis */
+
         </style>
     </head>
     <body>
         <div id="red"></div>
         <div id="blue"></div>
         <div id="green"></div>
+        <div id="yellow"></div>
     </body>
 </html>
